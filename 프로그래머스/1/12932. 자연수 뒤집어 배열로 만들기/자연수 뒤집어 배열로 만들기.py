@@ -1,6 +1,8 @@
 def solution(n):
-    n = str(n)
-    my_li=[]
-    my_li = [int(n[i]) for i in range(-1, -len(n)-1, -1)]
     
-    return my_li
+    li = []
+    while n > 0:
+        nam = n % 10
+        n = n // 10
+        li.append(nam)
+    return li
