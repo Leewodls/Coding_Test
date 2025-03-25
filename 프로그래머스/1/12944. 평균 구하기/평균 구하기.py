@@ -1,3 +1,7 @@
-from statistics import mean
+# from statistics import mean
+# def solution(arr):
+#     return mean(arr)
+
 def solution(arr):
-    return mean(arr)
+    mean = sum(arr)/len(arr)
+    return mean
