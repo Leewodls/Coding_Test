@@ -1,6 +1,9 @@
 def solution(n):
-    my_li=[]
-    for i in range(1,n):
-        if n%i==1:
-            my_li.append(i)
-    return min(my_li)
+    answer=1
+    while 1:
+        if n % answer ==1:
+            break
+        answer+=1
+    return answer
+
+            
